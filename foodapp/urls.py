@@ -29,6 +29,7 @@ urlpatterns = [
 	url(r'^register/$', views.register, name='register'),
 	url(r'^pfbusi/$', views.pfbusi, name='pfbusi'),
 	url(r'^rest/$', views.rest, name='rest'),
+	
 ]
 if settings.DEBUG:
 	urlpatterns+= static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

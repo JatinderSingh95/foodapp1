@@ -8,6 +8,9 @@ body {
 	height:100%;
  	
 }
+.all-frm label{
+	color:#333;
+}
 #cnt-blk{
 	border:solid 1px #e4e4e4;
 	float:left;
