@@ -23,7 +23,32 @@ html>
     <button type="submit">Login</button>
   </form>
     <a href="/register">Sign up</a>
-
+{% for server in object_list %}
+<ul>
+    
+	
+    <li>{{ server.restaurant }} </li>
+    <li>{{ server.address}} </li> 	
+   <li> {{ server.locations }} </li>
+    <li>{{ server.landmark }} </li>
+    <li>{{ server.restaurantphn}} </li> 	
+   <li> {{ server.locations }} </li> 
+   <li>{{ server.restaurantemail }} </li>
+    <li>{{ server.restaurantweb}} </li> 	
+   <li> {{ server.features }} </li>
+    <li>{{ server.openingstatus }} </li>
+    <li>{{ server.timing}} </li> 	
+   <li> {{ server.From }} </li>
+   <li> {{ server.To }} </li>
+    <li>{{ server.facebookpage }} </li>
+    <li>{{ server.twitterhandle}} </li> 	
+   <li> {{ server.otherdetails }} </li>   
+   
+   <li><img src="media/{{server.Image}}" width="50" height="300"></li>
+ 
+    
+	</ul>
+    {% endfor %}
 {% endblock %}
 
 {% block javascript %}
