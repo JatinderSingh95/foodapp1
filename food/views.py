@@ -21,14 +21,23 @@ def register(request):
 class ServerForm(ModelForm):
     class Meta:
         model = Blog
-        fields = ['restaurant','address','locations','pincode','landmark','restaurantphn'
-		,'restaurantemail','openingstatus','restaurantweb','first_aid']
+        fields = ['restaurant','address','locations','landmark','zipcode','restaurantphn'
+		,'restaurantemail','restaurantweb','features', 'openingstatus', 'timing',
+		'From','To','facebookpage','twitterhandle','otherdetails']
+		
 
 def server_list(request, template_name='server_list.html'):
     food = Blog.objects.all()
     data = {}
     data['object_list'] = food
     return render(request, template_name, data)
+	
+def server_list1(request, template_name='login.html'):
+    food = Blog.objects.all()
+    data = {}
+    data['object_list'] = food
+    return render(request, template_name, data)	
+	
 	  
 def pfbusi(request):
     

@@ -23,6 +23,7 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', views.server_list, name='server_list'),
+	url(r'^$', views.server_list1, name='server_list'),
     url(r'^log/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'server_list.html'}, name='logout'),
 	url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),

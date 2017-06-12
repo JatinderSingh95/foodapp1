@@ -25,7 +25,7 @@ SECRET_KEY = '(&@2yj$+2q%tq=s#l#ltjt(79mu589*5m3#r_bsar8i=fbm&fk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ciiboo.mindvis.in"]
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'food'
+	'food',
+	'multiselectfield'
 ]
 
 MIDDLEWARE = [
